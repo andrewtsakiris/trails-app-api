@@ -1,0 +1,9 @@
+{
+    "body": "{\"comment\":\"this hike was rly hard lol\",\"trailId\":\"7020349\", \"status\":\"completed\"}",
+    "requestContext": {
+      "identity": {
+        "cognitoIdentityId": "USER-SUB-1234"
+      }
+    }
+  }
+  
