@@ -29,6 +29,7 @@ iamRoleStatements:
         - dynamodb:UpdateItem
         - dynamodb:DeleteItem
       Resource: "arn:aws:dynamodb:us-east-2:*:*"
+
 functions:
   create:
     handler: create.main
@@ -69,6 +70,13 @@ functions:
     handler: statuslist.main
     events:
       - http:
-        path: listtrails/{trailStatus}
-        method: get
-        authorizer: aws_iam
+          path: listtrails/{trailStatus}
+          method: get
+          authorizer: aws_iam
+  getusers:
+    handler: getusers.main
+    events:
+      - http:
+          path: getusers/{trailId}
+          method: get
+          authorizer: aws_iam

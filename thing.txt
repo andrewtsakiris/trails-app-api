@@ -1,0 +1,12 @@
+npx aws-api-gateway-cli-test \
+--username='art85' \
+--password='Password' \
+--user-pool-id='us-east-2_BWL82JyH6' \
+--app-client-id='7m6ik3lc8q5obic6fjev1ccoi5' \
+--cognito-region='us-east-2' \
+--identity-pool-id='us-east-2:fb7aa43c-7064-4fb0-a3a2-b02fa066a9b5' \
+--invoke-url='https://ugiqmu7jvd.execute-api.us-east-2.amazonaws.com/prod' \
+--api-gateway-region='us-east-2' \
+--path-template='/trails' \
+--method='POST' \
+--body='{"userComment":"this HIKE was rly hard lol","trailId":"7020349","trailStatus":"saved"}'
