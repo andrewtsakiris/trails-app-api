@@ -1,0 +1,12 @@
+{
+    "body": "{\"userComment\":\"this hike was rly REAALYLLYLYL hard lol\",\"trailId\":\"7020349\", \"trailStatus\":\"saved\"}", 
+    "pathParameters": {
+      "entryId": "846454e0-83c3-11e9-a8e7-f97fe73fe183"
+    },
+    "requestContext": {
+      "identity": {
+        "cognitoIdentityId": "USER-SUB-1234"
+      }
+    }
+  }
+  

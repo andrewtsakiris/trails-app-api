@@ -1,5 +1,5 @@
 {
-    "body": "{\"comment\":\"this hike was rly hard lol\",\"trailId\":\"7020349\", \"status\":\"completed\"}",
+    "body": "{\"userComment\":\"this HIKE was rly hard lol\",\"trailId\":\"7020349\", \"trailStatus\":\"saved\"}",
     "requestContext": {
       "identity": {
         "cognitoIdentityId": "USER-SUB-1234"

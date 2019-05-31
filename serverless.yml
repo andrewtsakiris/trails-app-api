@@ -37,3 +37,38 @@ functions:
           path: trails
           method: post
           authorizer: aws_iam
+  update:
+    handler: update.main
+    events:
+      - http:
+          path: trails/{entryId}
+          method: put
+          authorizer: aws_iam
+  get:
+    handler: get.main
+    events:
+      - http:
+          path: trails/{entryId}
+          method: get
+          authorizer: aws_iam
+  list:
+    handler: list.main
+    events:
+      - http:
+          path: trails
+          method: get
+          authorizer: aws_iam
+  delete:
+    handler: delete.main
+    events:
+      - http:
+          path: trails/{entryId}
+          method: delete
+          authorizer: aws_iam
+  statuslist:
+    handler: statuslist.main
+    events:
+      - http:
+        path: listtrails/{trailStatus}
+        method: get
+        authorizer: aws_iam

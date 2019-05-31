@@ -13,8 +13,8 @@ export async function main(event, context) {
             userId: event.requestContext.identity.cognitoIdentityId,
             entryId: uuid.v1(),
             trailId: data.trailId,
-            status: data.status,
-            comment: data.comment,
+            trailStatus: data.trailStatus,
+            userComment: data.userComment,
             createdAt: Date.now()
         }
     };
